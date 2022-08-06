@@ -113,7 +113,9 @@
                 </div>
             </div>
         </div>
-        <div class="overhead"><canvas id="myChart" width="200" height="200"></canvas></div>
+        <div class="overhead">
+            <div class="overText">Overhead by top projetcs <br> <span>Top 5 projects are captured</span></div>
+            <canvas id="myChart" width="200" height="200"></canvas></div>
         <div class="property"></div>
      </div>
 
@@ -142,6 +144,7 @@ const myChart = new Chart(ctx, {
                 '#9ECD2C',
                 '#FFA100',
             ],
+            hoverOffset: 10,
             
         }]
     },

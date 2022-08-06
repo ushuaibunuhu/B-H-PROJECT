@@ -91,6 +91,7 @@
     border-radius: 15px;
     margin-left: 20px;
     padding: 15px;
+    overflow: hidden;
 }
 .val:nth-child(1){
     background-color: #D056A626;
@@ -177,6 +178,19 @@
     font-size: 12px;
     font-weight: 600;
     font-family: 'Mulish', sans-serif;
+}
+.overText{
+    color:#188b96;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: 'Mulish', sans-serif;
+    margin-bottom: 30px;
+}
+.overText span{
+    color:#6d6e71;
+    font-size: 12px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 400; 
 }
 .stat1 .projectDiv .project2 .pro .toText{
     color:#188b96;
