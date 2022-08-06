@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--GOOGLE FONTS-->
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dashboard1.css">
+    <title>Dashboard1</title>
+</head>
+<body>
+     <!--Nav starts here-->
+    <div class="nav">
+        <a class="" href="#"><img class="" src="/asset/imgs/logoBlack.svg" alt='logo'></a>
+        <div class="navIcons">
+            <a href=""><img src="/asset/icons/dashboard.svg" alt="dash"></a>
+            <a href=""><img src="/asset/icons/inventory.svg" alt="invent"></a>
+        </div>
+        <div class="mail">
+            <select>
+                <option>coo@brainsandhammers.com</option>
+                <option>coo@brainsandhammers.com</option>
+                </select>
+            <button>Log Out</button>
+        </div>
+    </div>
+    <!--Nav ends here-->
+
+     <!--values starts here-->
+     <div class="values">
+        <div class="heading">
+            <div class="txt">Dashboard</div>
+            <div class="text">Dashboard</div>
+            <div class="calendar">
+                <img src="/asset/icons/Calendar2.svg" alt="calendar2">
+                <div class="time">Last updated - <span>20 May 2022</span></div>
+            </div>
+        </div>
+        <div class="valueDiv">
+            <div class="val">
+                <div class="users">
+                    <img src="/asset/icons/users.svg" alt="users"/>
+                    <div><img src="/asset//icons/rise.svg" alt="rise1"> <span>14%</span></div>
+                    </div>
+                    <div class="cust">Customers</div>
+                    <div class="num"><span class="number">657</span></div>
+            </div>
+
+            <div class="val">
+                <div class="users">
+                    <img src="/asset/icons/graphRise.svg" alt="users"/>
+                    <div><img src="/asset//icons/rise.svg" alt="rise2"> <span>3%</span></div>
+                    </div>
+                    <div class="cust">Revenue</div>
+                    <div class="num">8.3<span class="number">8.3</span> <sub>B</sub></div>
+            </div>
+
+            <div class="val">
+                <div class="users">
+                    <img src="/asset/icons/open.svg" alt="open"/>
+                    <div><img src="/asset//icons/fall.png" alt="fall"> <span>7.5%</span></div>
+                    </div>
+                    <div class="cust">overhead</div>
+                    <div class="num">8.3<span class="number">358.8</span> <sub>M</sub></div>
+            </div>
+
+            <div class="val">
+                <div class="users">
+                    <img src="/asset/icons/buy.svg" alt="buy"/>
+                    <div><img src="/asset//icons/rise.svg" alt="rise3"> <span>7.5%</span></div>
+                    </div>
+                    <div class="cust">Sales</div>
+                    <div class="num">8.3<span class="number">789</span> <sub>M</sub></div>
+            </div>
+        </div>
+     </div>
+     <!--values end here-->
+
+     <!--stats1 starts here-->
+     <div class="stat1">
+        <div class="projectDiv">
+            <div class="project">
+                <div class="pro">
+                    <div class="toText">Total Projects <br> <span>Number of projects since inception</span></div>
+                    <div class="proNum">65</div>
+                </div>
+                <div class="comp">
+                    <span>Completed projects</span>
+                    <div class="nums">
+                        <span style="color:#188b96; font-weight:bold; font-size:12px;" class="compNum">42</span>
+                        <span style="color:#188b96; font-weight:bold; font-size:12px;" class="progressValue">74%</span>
+                    </div>
+                    <div class="projectProgress"><div class="projectProgressInner"></div></div>
+                </div>
+            </div>
+            <div class="project2">
+                <div class="pro">
+                    <div class="toText">Total Budget <br> <span>Allocated budget for 2021</span></div>
+                    <div class="proNum">750 <sub>M</sub></div>
+                </div>
+                <div class="comp">
+                    <div style="display:flex; justify-content: space-between; align-items: center;">
+                        <span>Amount Spent</span>
+                        <span>utilized</span>
+                    </div>
+                   
+                    <div class="nums">
+                        <span style="color:#188b96; font-weight:bold; font-size:12px;" class="compNum">359,876,990.00</span>
+                        <span style="color:#188b96; font-weight:bold; font-size:12px;" class="progressValue">52%</span>
+                    </div>
+                    <div class="budgetProgress"><div class="budgetProgressInner"></div></div>
+                </div>
+            </div>
+        </div>
+        <div class="overhead"><canvas id="myChart" width="400" height="400"></canvas></div>
+        <div class="property"></div>
+     </div>
+
+     <script src="/node_modules/chart.js/dist/chart.js"></script>
+<script>
+    const ctx = document.getElementById('myChart').getContext('2d');
+const myChart = new Chart(ctx, {
+    type: 'pie',
+    data: {
+        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        datasets: [{
+            label: '# of Votes',
+            data: [12, 19, 3, 5, 2, 3],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});
+</script>
+    </body>
+    </html>
