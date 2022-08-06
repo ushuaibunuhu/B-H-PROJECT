@@ -266,16 +266,20 @@
     margin-top: 10px;
     margin-bottom: 10px;
 }
-.comp .budgetProgress .projectProgressInner{
+.comp .budgetProgress .budgetProgressInner{
     background-color: #188b96;
-    width:74%;
+    width:52%;
     height: 100%;
 }
 .stat1 .overhead{
     width:27%;
     background-color: #E2F1F240;
+    border-radius: 20px;
+    padding:20px;
 }
 .stat1 .property{
     width:43%;
     background-color: #E2F1F240;
+    border-radius: 20px;
+    padding:20px;
 }
