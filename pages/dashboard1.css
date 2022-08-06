@@ -175,13 +175,13 @@
 }
 .stat1 .projectDiv .project .pro .toText{
     color:#188b96;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 600;
     font-family: 'Mulish', sans-serif;
 }
 .overText{
     color:#188b96;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 600;
     font-family: 'Mulish', sans-serif;
     margin-bottom: 30px;
@@ -296,4 +296,69 @@
     background-color: #E2F1F240;
     border-radius: 20px;
     padding:20px;
+}
+.stat1 .property .pro{
+    width:100%;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom:1px solid #188b96;
+}
+.stat1 .property .pro .toText{
+    color:#188b96;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Mulish', sans-serif;
+}
+.stat1 .property .pro .toText span{
+    color:#6d6e71;
+    font-size: 12px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 400; 
+}
+.stat1 .property .pro .proNum{
+    color:#188b96;
+    font-weight: bold;
+    font-size: 20px;
+}
+.stat1 .property .pro .proNum span{
+    color:#6d6e71;
+    font-size: 12px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 400; 
+}
+.property .propertyValue{
+    text-align: center;
+    color:#188b96;
+    font-size: 25px;
+    font-weight: bolder;
+    font-family: 'Mulish', sans-serif;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+.property .soldDiv{
+    width:100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.property .soldDiv .sold{
+    width:48%;
+    border-radius: 8px;
+    padding: 20px 10px;
+    margin-bottom: 10px;
+}
+.property .soldDiv .sold:nth-child(1){
+    background-color: #1F75751A;
+}
+.property .soldDiv .sold:nth-child(2){
+    background-color: #56C5D01A ;
+}
+.property .soldDiv .sold:nth-child(3){
+    background-color: #3D3D3E1A;
+}
+.property .soldDiv .sold:nth-child(4){
+    background-color: #9ECD2C1A;
 }

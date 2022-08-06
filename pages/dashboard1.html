@@ -116,7 +116,33 @@
         <div class="overhead">
             <div class="overText">Overhead by top projetcs <br> <span>Top 5 projects are captured</span></div>
             <canvas id="myChart" width="200" height="200"></canvas></div>
-        <div class="property"></div>
+        <div class="property">
+            <div class="pro">
+                <div class="toText">Property Inventory <br> <span>property summary</span></div>
+                <div class="proNum">245 <br> <span>Total number of properties</span></div>
+            </div>
+            <div class="propertyValue">17,567,998,536</div>
+            <p style="width:100%; text-align:center; color:#6d6e71; font-size: 12px; font-family: 'Mulish', sans-serif;
+            font-weight: 400; ">Total property value</p>
+            <div class="soldDiv">
+                <div class="sold">
+                    <span style="color:#188b96; font-weight:bold; font-size:12px; margin-bottom: 6px; width:100%;">Available Properties</span> <br/>
+                    <span class="availableProperties" style="color:#6d6e71; font-weight:bold; font-size:18px; margin-bottom: 6px;">93</span>
+                </div>
+                <div class="sold">
+                    <span style="color:#188b96; font-weight:bold; font-size:12px; margin-bottom: 6px; width:100%;">Sold</span> <br/>
+                    <span class="soldProperties" style="color:#6d6e71; font-weight:bold; font-size:18px; margin-bottom: 6px;">52</span>
+                </div>
+                <div class="sold">
+                    <span style="color:#188b96; font-weight:bold; font-size:12px; margin-bottom: 6px; width:100%;">Remaining Value</span> <br/>
+                    <span class="availableValue" style="color:#6d6e71; font-weight:bold; font-size:18px; margin-bottom: 6px;">2,945,365,778.00</span>
+                </div>
+                <div class="sold">
+                    <span style="color:#188b96; font-weight:bold; font-size:12px; margin-bottom: 6px; width:100%;">Sales  Value</span> <br/>
+                    <span class="salesValue" style="color:#6d6e71; font-weight:bold; font-size:18px; margin-bottom: 6px;">1,322,632758</span>
+                </div>
+            </div>
+        </div>
      </div>
 
      <script src="/node_modules/chart.js/dist/chart.js"></script>
@@ -131,7 +157,7 @@ const myChart = new Chart(ctx, {
             '10% - City infastructure', 
             '15% - Control city project',
             '25% - Others', 
-            '30% - Guzape project'
+            '30% - Guzape project',
         ],
         datasets: [{
             label: '# of Votes',
@@ -149,11 +175,7 @@ const myChart = new Chart(ctx, {
         }]
     },
     options: {
-        scales: {
-            y: {
-                beginAtZero: true
-            }
-        }
+       
     }
 });
 </script>
