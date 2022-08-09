@@ -167,7 +167,101 @@
                 <canvas id="financeChart" width="400" height="200"></canvas>
             </div>
         </div>
+        <div class="stat2Divv">
+            <div class="pro2">
+                <div class="toText2">Financial Position by Category <br> 
+                    <span>Overhead and Revenue by Bank</span>
+                </div>
+                <div class="todayMenu">
+                    <img src="/asset/icons/settings.svg" alt="settings">
+                    <select>
+                        <option selected>Today</option>
+                        <option>Last week</option>
+                        <option>Last month</option>
+                        <option>Last year</option>
+                    </select>
+                </div>
+        </div>
+        <div style="display: flex; justify-content: space-between; align-items: center; width:100%;">
+            <div class="categoryChart1">
+                <canvas id="categoryChart" width="300" height="200"></canvas>
+                <p style="color:#188b96; font-weight:bold; font-size:12px; margin-top:6px; width:100%;
+                text-align:center;">&hyphen; Revenue &hyphen;</p>
+            </div>
+            <div class="categoryChart2">
+                <canvas id="categoryChart2" width="300" height="200"></canvas>
+                <p style="color:#188b96; font-weight:bold; font-size:12px; margin-top:6px; width:100%;
+                text-align:center;">&hyphen; Overhead &hyphen;</p>
+            </div>
+            </div>
+            </div>
+        </div>
+        <!--stats2 ends here-->
 
+        <!--stats3 starts here-->
+      <div class="stat3">
+        <div class="stat3Div">
+            <div class="pro2">
+                <div class="toText2">Financial Position <br> <span>Revenue</span> <br> 
+                    <span class="time2">20 May 2022</span>
+                </div>
+                <div class="todayMenu">
+                    <div class="buttons3" style="display:flex; justify-content: space-between; align-items: center; margin-right: 15px;">
+                        <button class="revenueTab">Revenue</button>
+                         <button class="overheadTab">overhead</button>
+                    </div>
+                    <div class="select" style="display:flex; justify-content: space-between; align-items: center;">
+                        <img style="width: 10px; margin-right: 4px;" src="/asset/icons/settings.svg" alt="settings">
+                    <select>
+                        <option selected>Today</option>
+                        <option>Last week</option>
+                        <option>Last month</option>
+                        <option>Last year</option>
+                    </select>
+                    </div>
+                    <button style="background-color:#56c5d0; color:#fff; border:none;
+                    outline:none; cursor:pointer; font-size:12px; padding:5px 14px; 
+                    border-radius:4px; margin-left:15px;" class="ViewBtn">View List</button>
+                </div>
+        </div>
+        <div class="financeChart22">
+            <canvas id="financeChart22" width="800" height="200"></canvas>
+        </div>
+        <div class="financeChart23">
+            <canvas id="financeChart23" width="800" height="200"></canvas>
+        </div>
+    </div>
+    </div>
+      <!--stats3 ends here-->
+
+
+       <!--stats4 starts here-->
+       <div class="stat4">
+        <div class="stat4Div">
+            <div class="pro2">
+                <div class="toText2">Actual Vs Budget Resources By Project <br> <span>Revenue</span>
+                </div>
+        </div>
+        <div class="budgetChart">
+            <canvas id="budgetChart" width="800" height="200"></canvas>
+        </div>
+    </div>
+    </div>
+      <!--stats4 ends here-->
+
+       <!--stats5 starts here-->
+       <div class="stat5">
+        <div class="stat5Div">
+            <div class="pro2">
+                <div class="toText2">Sales by Region <br> <span>Data captures Lagos and Abuja</span>
+                </div>
+        </div>
+        <div class="mapDiv">
+            <h1>MAP AREA</h1>
+        </div>
+    </div>
+    </div>
+      <!--stats5 ends here-->
      <script src="/node_modules/chart.js/dist/chart.js"></script>
 <script>
 
@@ -218,6 +312,136 @@ const dataTwo = {
             
         }],
 }
+const dataThree = {
+        labels: [
+            '5% - APO 3 Procurement', 
+            '10% - Life Camp Bristol.', 
+            '10% - City infastructure', 
+            '15% - Control city project',
+            '25% - Others', 
+            '30% - Guzape project',
+        ],
+    datasets: [{
+            label: '# of Votes',
+            data: [10, 10, 10, 15, 25, 30],
+            backgroundColor: [
+                '#1F7575',
+                '#F3EA61',
+                '#D13448',
+                '#FFB1B1',
+                '#9ECD2C',
+                '#FFA100',
+            ],
+            hoverOffset: 10,
+            
+        }],
+}
+const dataFour = {
+        labels: [
+            '5% - APO 3 Procurement', 
+            '10% - Life Camp Bristol.', 
+            '10% - City infastructure', 
+            '15% - Control city project',
+            '25% - Others', 
+            '30% - Guzape project',
+        ],
+    datasets: [{
+            label: '# of Votes',
+            data: [10, 10, 10, 15, 25, 30],
+            backgroundColor: [
+                '#1F7575',
+                '#F3EA61',
+                '#D13448',
+                '#FFB1B1',
+                '#9ECD2C',
+                '#FFA100',
+            ],
+            hoverOffset: 10,
+            
+        }],
+}
+const dataFive = {
+        labels: [
+        'CITY REVENUE -UBA', 
+        'CITY REVENUE', 
+        'BRADFORD CITY REV. -UBA', 
+        'B & City Project Revenue APG',
+        'City Project 2- Fidelity', 
+        'Main Account: Revenue',
+        'CITY REVENUE -UBA',
+        'CITY REVENUE',
+        'BRADFORD CITY REV',
+        'B & City Project Revenue APG',
+        'City Project 2- Fidelity',
+        'Main Account: Revenue',
+        ],
+    datasets: [{
+            label: '',
+            data: [90, 250, 110, 190, 90, 130, 250, 150, 120, 440, 460, 100],
+            backgroundColor: [
+                '#56c5d0',
+            ],
+            borderColor:'#188b96',
+            borderWidth:3,
+            hoverOffset: 10,
+            
+        }],
+}
+const dataSix = {
+        labels: [
+        'CITY REVENUE -UBA', 
+        'CITY REVENUE', 
+        'BRADFORD CITY REV. -UBA', 
+        'B & City Project Revenue APG',
+        'City Project 2- Fidelity', 
+        'Main Account: Revenue',
+        'CITY REVENUE -UBA',
+        'CITY REVENUE',
+        'BRADFORD CITY REV',
+        'B & City Project Revenue APG',
+        'City Project 2- Fidelity',
+        'Main Account: Revenue',
+        ],
+    datasets: [{
+            label: '',
+            data: [150, 120, 440, 460, 90, 250, 110, 190, 90, 130, 250, 500],
+            backgroundColor: [
+                '#56c5d0',
+            ],
+            borderColor:'#188b96',
+            borderWidth:3,
+            hoverOffset: 10,
+            
+        }],
+}
+const dataSeven = {
+        labels: [
+        'CITY REVENUE -UBA', 
+        'CITY REVENUE', 
+        'BRADFORD CITY REV. -UBA', 
+        'B & City Project Revenue APG',
+        'City Project 2- Fidelity', 
+        'Main Account: Revenue',
+        'CITY REVENUE -UBA',
+        'CITY REVENUE',
+        'BRADFORD CITY REV',
+        'B & City Project Revenue APG',
+        'City Project 2- Fidelity',
+        'Main Account: Revenue',
+        ],
+    datasets: [{
+            label: '',
+            data: [150, 120, 440, 460, 90, 250, 110, 190, 90, 130, 250, 500],
+            backgroundColor: [
+                '#E2F1F240',
+            ],
+            borderColor:'#188b96',
+            borderWidth:3,
+            hoverOffset: 10,
+            fill:true,
+            tension:0.4,
+        }],
+}
 
 //config
 const config = {
@@ -241,6 +465,62 @@ const configTwo = {
         }
     }
 }
+const configThree = {
+    type: 'doughnut',
+    data:dataThree,
+    options: {
+       
+    }
+}
+const configFour = {
+    type: 'doughnut',
+    data:dataFour,
+    options: {
+       
+    }
+}
+const configFive = {
+    type: 'line',
+    data:dataFive,
+    options: {
+       Plugins:{
+        legend:{
+            display:false
+        },
+    },
+        labels:{
+            fontColor:'#1f7575'
+        }
+    }
+}
+const configSix = {
+    type: 'line',
+    data:dataSix,
+    options: {
+       Plugins:{
+        legend:{
+            display:false
+        },
+    },
+        labels:{
+            fontColor:'#1f7575'
+        }
+    }
+}
+const configSeven = {
+    type: 'line',
+    data:dataSeven,
+    options: {
+       Plugins:{
+        legend:{
+            display:false
+        },
+    },
+        labels:{
+            fontColor:'#1f7575'
+        }
+    }
+}
 
 //render innit block
 const overheadChart = new Chart(document.getElementById('overheadChart').getContext('2d'),
@@ -249,6 +529,39 @@ const overheadChart = new Chart(document.getElementById('overheadChart').getCont
 const financeChart = new Chart(document.getElementById('financeChart').getContext('2d'),
     configTwo
 );
+const categoryChart = new Chart(document.getElementById('categoryChart').getContext('2d'),
+    configThree
+);
+const categoryChart2 = new Chart(document.getElementById('categoryChart2').getContext('2d'),
+    configFour
+);
+const financeChart22 = new Chart(document.getElementById('financeChart22').getContext('2d'),
+    configFive
+);
+const financeChart23 = new Chart(document.getElementById('financeChart23').getContext('2d'),
+    configSix
+);
+const budgetChart = new Chart(document.getElementById('budgetChart').getContext('2d'),
+    configSeven
+);
+
+
+const revenueTab = document.querySelector('.revenueTab');
+const overheadTab = document.querySelector('.overheadTab');
+const financeChart222 = document.querySelector('.financeChart22');
+const financeChart233 = document.querySelector('.financeChart23');
+revenueTab.addEventListener('click', () => {
+    revenueTab.style.backgroundColor = "#56c5d0";
+    overheadTab.style.backgroundColor = "transparent";
+    financeChart222.style.display = "flex";
+    financeChart233.style.display = "none";
+});
+overheadTab.addEventListener('click', () => {
+    revenueTab.style.backgroundColor = "transparent";
+    overheadTab.style.backgroundColor = "#56c5d0";
+    financeChart222.style.display = "none";
+    financeChart233.style.display = "flex";
+});
 </script>
     </body>
     </html>

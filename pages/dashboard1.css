@@ -369,47 +369,101 @@
     display: flex;
     justify-content: space-between;
 }
+.stat3{
+    padding:30px;
+    margin-top: 10px;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}
+.stat4{
+    padding:30px;
+    margin-top: 10px;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}
+.stat5{
+    padding:30px;
+    margin-top: 10px;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}
 .stat2 .stat2Div{
     background-color: #E2F1F240;
     width:49%;
     border-radius: 20px;
     padding: 20px;
 }
-.stat2 .stat2Div .pro2{
+.stat2 .stat2Divv{
+    background-color: #E2F1F240;
+    width:49%;
+    border-radius: 20px;
+    padding: 20px;
+}
+.stat3 .stat3Div{
+    background-color: #E2F1F240;
+    width:100%;
+    border-radius: 20px;
+    padding: 20px;
+    height: auto;
+}
+.stat4 .stat4Div{
+    background-color: #E2F1F240;
+    width:100%;
+    border-radius: 20px;
+    padding: 20px;
+    height: auto;
+}
+.stat5 .stat5Div{
+    background-color: #E2F1F240;
+    width:100%;
+    border-radius: 20px;
+    padding: 20px;
+    height: auto;
+}
+.stat2 .stat2Div .pro2, .stat2 .stat2Divv .pro2, .stat3 .stat3Div .pro2, .stat4 .stat4Div .pro2, 
+.stat5 .stat5Div .pro2{
     width:100%;
     padding-bottom: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.stat2 .stat2Div .pro2 .toText2{
+.stat2 .stat2Div .pro2 .toText2, .stat2 .stat2Divv .pro2 .toText2, .stat3 .stat3Div .pro2 .toText2, .stat4
+ .stat4Div .pro2 .toText2,
+.stat5 .stat5Div .pro2 .toText2{
     color:#188b96;
     font-size: 16px;
     font-weight: 600;
     font-family: 'Mulish', sans-serif;
 }
-.stat2 .stat2Div .pro2 .toText2 span{
+.stat2 .stat2Div .pro2 .toText2 span, .stat2 .stat2Divv .pro2 .toText2 span, .stat3 .stat3Div .pro2 .toText2 span, 
+.stat4 .stat4Div .pro2 .toText2 span,
+.stat5 .stat5Div .pro2 .toText2 span{
     color:#6d6e71;
     font-size: 12px;
     font-family: 'Mulish', sans-serif;
     font-weight: 400; 
 }
-.stat2 .stat2Div .pro2 .toText2 .time2{
+.stat2 .stat2Div .pro2 .toText2 .time2, .stat3 .stat3Div .pro2 .toText2 .time2{
     color:#6d6e71;
     font-size: 12px;
     font-family: 'Mulish', sans-serif;
     font-weight: 600; 
 }
-.stat2 .stat2Div .pro2 .todayMenu{
+.stat2 .stat2Div .pro2 .todayMenu, .stat2 .stat2Divv .pro2 .todayMenu, .stat3 .stat3Div .pro2 .todayMenu{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.stat2 .stat2Div .pro2 .todayMenu img{
+.stat2 .stat2Div .pro2 .todayMenu img, .stat2 .stat2Divv .pro2 .todayMenu img, .stat3 .stat3Div .pro2 .todayMenu img{
     width: 10px;
     margin-right: 4px;
 }
-.stat2 .stat2Div .pro2 .todayMenu select{
+.stat2 .stat2Div .pro2 .todayMenu .select select, .stat2 .stat2Divv .pro2 .todayMenu .select select,
+ .stat3 .sta32Div .pro2 .todayMenu .select select{
     background-color: #56c5d040;
     border-radius: 4px;
     padding: 2px 0;
@@ -417,7 +471,25 @@
     outline: none;
     cursor: pointer;
 }
-.stat2 .stat2Div .pro2 .todayMenu select option{
+.stat2 .stat2Div .pro2 .todayMenu .select select option, .stat2 .stat2Divv .pro2 .todayMenu .select select option,
+ .stat3 .stat3Div .pro2 .todayMenu .select select option{
+    background-color: red;
+    border-radius: 8px;
+    border:none;
+    margin-top: 8px;
+    padding-bottom: 5px;
+    font-size: 12px;
+    box-shadow: 0 0 8px 0 rgba(0,0,0,.2);
+}
+.stat2 .stat2Div .pro2 .todayMenu select, .stat3 .stat3Div .pro2 .todayMenu select{
+    background-color: #56c5d040;
+    border-radius: 4px;
+    padding: 2px 0;
+    border:none;
+    outline: none;
+    cursor: pointer;
+}
+.stat2 .stat2Div .pro2 .todayMenu select option, .stat3 .stat3Div .pro2 .todayMenu select option{
     background-color: #fff;
     border-radius: 8px;
     border:none;
@@ -426,3 +498,40 @@
     font-size: 12px;
     box-shadow: 0 0 8px 0 rgba(0,0,0,.2);
 }
+.revenueTab{
+    padding:5px 14px;
+    border-radius: 4px;
+    border:none;
+    outline: none;
+    cursor: pointer;
+    border:1px solid #188b96;
+    background-color: #56c5d0;
+    margin-right: 6px;
+}
+.overheadTab{
+    padding:5px 14px;
+    border-radius: 4px;
+    border:none;
+    outline: none;
+    cursor: pointer;
+    border:1px solid #56c5d0;
+    background-color: transparent;
+    margin-right: 8px;
+}
+.financeChart22{
+    width:100%; 
+    display: flex;
+     justify-content: center; 
+}
+.financeChart23{
+    width:100%; 
+    display: none;
+     justify-content: center; 
+}
+.budgetChart{
+    width:100%; 
+    display: flex;
+    justify-content: center; 
+}
+
+
