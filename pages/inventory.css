@@ -1,0 +1,250 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Mulish', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+.nav{
+    width:100%;
+    height: 40px;
+    padding:30px;
+    border-bottom: 1px solid #b1b1b1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+.nav .navIcons{
+    display: flex;
+    align-items: flex-start;
+}
+.nav .navIcons a img{
+    width:60px;
+    margin-right: 10px;
+}
+.nav a img{
+    width:150px;
+}
+.nav .mail select{
+    border:none;
+    outline: none;
+    font-size: 14px;
+    margin-right: 10px;
+}
+.nav .mail button{
+    padding: 4px 10px;
+    border-radius: 6px;
+    background-color: rgba(86, 197, 208,.3);
+    font-family: 'Mulish', sans-serif;
+    font-weight: 500;
+    color:#3d3d3e;
+    text-align: center;
+    border:none;
+    outline:none;
+    cursor: pointer;
+}
+.values{
+    width:100%;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.values .heading{
+    width:auto;
+}
+.values .heading .txt{
+    color:#3d3d3e;
+    font-size: 12px;
+    font-weight:600;
+    font-family: 'Mulish', sans-serif;
+}
+.values .heading .text{
+    color:#6d6e71;
+    font-size: 22px;
+    font-weight:600;
+    font-family: 'Mulish', sans-serif;
+    margin-top: 30px;
+}
+.values .heading .calendar{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+.values .heading .calendar img{
+    width:25px;
+    margin-right: 8px;
+}
+.values .heading .calendar .time{
+    font-size: 12px;
+    font-weight: bold;
+    color:#6d6e71;
+}
+.values .valueDiv{
+    width:auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: 'Mulish', sans-serif;
+}
+.values .valueDiv .val{
+    width:130px;
+    height: 120px;
+    border-radius: 15px;
+    margin-left: 20px;
+    padding: 15px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.val:nth-child(1){
+    background-color: #D056A626;
+}
+.val:nth-child(2){
+    background-color: #D0CB5626;
+}
+.val:nth-child(3){
+    background-color: #56D09326;
+}
+.val:nth-child(4){
+    background-color: #5664D026;
+}
+.values .valueDiv .val .users{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.values .valueDiv .val .cust{
+    font-size: 12px;
+    color:#3d3d3e;
+}
+.values .valueDiv .val .num{
+    font-size: 20px;
+    color:#3d3d3e;
+    font-weight: 600;
+    margin-top: 15px;
+}
+.tableDiv{
+    padding:30px;
+    margin-top: 10px;
+    width:100%;
+}
+.tableDiv .tableTab{
+    width:100%;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #2323250d;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+.projectBtn{
+    font-size: 12px;
+    color:#3d3d3e;
+    font-family: 'Mulish', sans-serif;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 4px 12px;
+    position: relative;
+}
+.line1{
+    width:40px;
+    height: 2px;
+    top: 33px;
+    left: 10px;
+    background-color:#188B96 ;
+    position: absolute;
+}
+.line2{
+    width:45px;
+    height: 2px;
+    top: 33px;
+    left: 80px;
+    background-color:#188B96;
+    position: absolute;
+    display: none;
+}
+.financialBtn{
+    border:none;
+    font-size: 12px;
+    color:#3d3d3e;
+    font-family: 'Mulish', sans-serif;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 4px 12px;
+    position: relative;
+}
+.searchDiv{
+    width:100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tableDiv table{
+    width:100%;
+    margin-top: 20px;
+    border: none;
+    padding: 0;
+}
+.tableDiv table thead{
+    width:100%;
+}
+.tableDiv table tbody{
+    width:100%;
+    text-align: center;
+    padding: 0;
+}
+.tableDiv table thead th{
+    font-size: 12px;
+    color:#6d6e71;
+    font-family: 'Mulish', sans-serif;
+}
+.tableDiv table tbody tr{
+    margin: 0;
+}
+.tableDiv table tbody td{
+    padding: 8px;
+    font-size: 12px;
+    color:#6d6e71;
+    font-family: 'Mulish', sans-serif;
+    margin: 0;
+}
+.tableDiv table tbody tr:nth-child(even){
+    background-color: #6D6E710D;
+}
+.blue{
+    color:#188b96 !important;
+}
+.red{
+    color:#d13448 !important;
+}
+td img{
+    width:10px
+}
+.paginationDiv{
+    width:100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.paginationDiv .paginationBtn button{
+    margin-left: 5px;
+    padding: 4px 8px;
+    font-size: 12px;
+    color:#56c5d0;
+    font-family: 'Mulish', sans-serif;
+    border:none;
+    outline:none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.selectedTable{
+    color:#fff !important;
+    background-color: #56c5d0;
+}

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--GOOGLE FONTS-->
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Inventory</title>
+    <link rel="stylesheet" href="inventory.css">
+</head>
+<body>
+      <!--Nav starts here-->
+      <div class="nav">
+        <a class="" href="#"><img class="" src="/asset/imgs/logoBlack.svg" alt='logo'></a>
+        <div class="navIcons">
+            <a href=""><img src="/asset/icons/dashboard.svg" alt="dash"></a>
+            <a href=""><img style="width:30px" src="/asset/icons/inventory3.svg" alt="inven2t"></a>
+        </div>
+        <div class="mail">
+            <select>
+                <option>coo@brainsandhammers.com</option>
+                <option>coo@brainsandhammers.com</option>
+                </select>
+            <button>Log Out</button>
+        </div>
+    </div>
+    <!--Nav ends here-->
+
+    <!--values starts here-->
+    <div class="values">
+        <div class="heading">
+            <div class="txt">Projects</div>
+            <div class="text">Inventory</div>
+            <div class="calendar">
+                <img src="/asset/icons/Calendar2.svg" alt="calendar2">
+                <div class="time">Last updated - <span>20 May 2022</span></div>
+            </div>
+        </div>
+        <div class="valueDiv">
+            <div class="val">
+                    <div class="cust">Total Projects</div>
+                    <div class="num"><span class="number">65</span></div>
+            </div>
+
+            <div class="val">
+                    <div class="cust">Ongoing Projects</div>
+                    <div class="num"><span class="number">20</span></div>
+            </div>
+
+            <div class="val">
+                    <div class="cust">Completed Projects</div>
+                    <div class="num"><span class="number">42</span></div>
+            </div>
+
+            <div class="val">
+                    <div class="cust">Suspended Projects</div>
+                    <div class="num"><span class="number">3</span></div>
+            </div>
+        </div>
+     </div>
+     <!--values end here-->
+
+    
+     <!--table starts here-->
+     <div class="tableDiv">
+            <div class="tableTab">
+                    <div class="projectBtn">Projects </div>
+                <div class="financialBtn">Financial</div>
+                <div class="line1"></div>
+                <div class="line2"></div>
+            </div>
+            <div class="searchDiv">
+                <div style="display:flex; justify-content:center; align-items:center" class="">
+                <div style="display:flex; justify-content:center; align-items:center" class="">
+                    <div class=""><img style="background-color:#6D6E710D; padding:6px; width:25px; border-top-left-radius: 4px; 
+                    border-bottom-left-radius: 4px; margin-top: 5px;" 
+                        src="/asset/icons/Search.svg" alt="search"></div>
+                    <input style="border:none; outline:none; background-color:#6D6E710D; padding:4px; border-radius: 4px; margin-right: 8px;"
+                     type="search" name="search">
+                </div>
+                <button style="border-radius: 4px; background-color:#56c5d0; padding:4px 12px; border:none; outline:none; color:#fff; 
+                font-size: 12px; cursor: pointer;" 
+                class="searchTable">Search</button>
+                </div>
+
+                <div style="display:flex; justify-content:center; align-items:center" class="">
+                    <div style="display:flex; justify-content:center; align-items:center" class="">
+                        <img style=" width:15px; margin-right: 5px;" src="/asset/icons/filter.svg" alt="settings">
+                        <select style="border:none; outline:none; background-color:#6D6E710D; padding:4px; border-radius: 4px;
+                         margin-right: 8px; font-size:12px">
+                            <option selected>Filter By date</option>
+                            <option>Filter By date</option>
+                            <option>Filter By date</option>
+                            <option>Filter By date</option>
+                        </select>
+                    </div>
+                    <button style="border-radius: 4px; background-color:#56c5d0; border:none; outline:none; cursor: pointer;" class="searchFilter"><img style="width:25px" src="/asset/icons/whiteArrow.svg" alt="right"></button>
+                </div>
+            </div>
+            <table>
+                <thead>
+                    <th style="display:flex; justify-content:space-between; align-items:center;
+                    padding:4px; border-radius:4px; border:1px solid #56c5d040;"><input type="checkbox"><img style="width:12px; margin-left:3px;" src="/asset/icons/Swap.svg">
+                    </th>
+                    <th>Projects Name</th>
+                    <th>Contractor</th>
+                    <th>Budget</th>
+                    <th>Actual</th>
+                    <th>SBU Head</th>
+                    <th>Agent</th>
+                    <th colspan="3">%Completion Status</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="text-align:left; padding-left:4px;" data-label="input"><input type="checkbox"></td>
+                        <td data-label="Projects Name">B & H Guzape</td>
+                        <td data-label="Contractor">Arbico PLC <span class="plus">+3</span></td>
+                        <td data-label="Budget">56,356,000.00</td>
+                        <td class="red" data-label="Actual">57,887,000.00</td>
+                        <td data-label="SBU Head">Ahmed Jeku</td>
+                        <td data-label="Agent">-</td>
+                        <td data-label="%Completion Status">Ongoing</td>
+                        <td data-label="%Completion Status">54%</td>
+                        <td data-label="%Completion Status"><img style="cursor: pointer;" src="/asset/icons/Filter.svg"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:left; padding-left:4px;" data-label="input"><input type="checkbox"></td>
+                        <td data-label="Projects Name">City Infrastructure</td>
+                        <td data-label="Contractor">SLEC Nigeria limited <span class="plus">+5</span></td>
+                        <td data-label="Budget">656,225,998.00</td>
+                        <td class="blue" data-label="Actual">652,009,000.00</td>
+                        <td data-label="SBU Head">Kunle Giaus</td>
+                        <td data-label="Agent">Frank Mensa</td>
+                        <td class="blue" data-label="%Completion Status">Completed</td>
+                        <td data-label="%Completion Status">100%</td>
+                        <td data-label="%Completion Status"><img style="cursor: pointer;" src="/asset/icons/Filter.svg"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:left; padding-left:4px;" data-label="input"><input type="checkbox"></td>
+                        <td data-label="Projects Name">APO 2</td>
+                        <td data-label="Contractor">Arofed Resources <span class="plus">+4</span></td>
+                        <td data-label="Budget">24,356,000.00</td>
+                        <td data-label="Actual">7,357,234.00</td>
+                        <td data-label="SBU Head">Ude Ese</td>
+                        <td data-label="Agent">-</td>
+                        <td data-label="%Completion Status">Ongoing</td>
+                        <td data-label="%Completion Status">48%</td>
+                        <td data-label="%Completion Status"><img style="cursor: pointer;" src="/asset/icons/Filter.svg"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:left; padding-left:4px;" data-label="input"><input type="checkbox"></td>
+                        <td data-label="Projects Name">APO 3</td>
+                        <td data-label="Contractor">Cappa & D’alberto Plc <span class="plus">+6</span></td>
+                        <td data-label="Budget">2,353,998.00</td>
+                        <td data-label="Actual">1,127,900.00</td>
+                        <td data-label="SBU Head">Babatunde Ihu</td>
+                        <td data-label="Agent">-</td>
+                        <td data-label="%Completion Status">Ongoing</td>
+                        <td data-label="%Completion Status">74%</td>
+                        <td data-label="%Completion Status"><img style="cursor: pointer;" src="/asset/icons/Filter.svg"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:left; padding-left:4px;" data-label="input"><input type="checkbox"></td>
+                        <td data-label="Projects Name">APO 4</td>
+                        <td data-label="Contractor">Beco Nigeria Limited <span class="plus">+3</span></td>
+                        <td data-label="Budget">16,386,000.00</td>
+                        <td class="blue" data-label="Actual">17356,000.00</td>
+                        <td data-label="SBU Head">Tola Wakama</td>
+                        <td data-label="Agent">Tayo Wasiu</td>
+                        <td class="blue" data-label="%Completion Status">Completed</td>
+                        <td class="blue" data-label="%Completion Status">100%</td>
+                        <td data-label="%Completion Status"><img style="cursor: pointer;" src="/asset/icons/Filter.svg"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:left; padding-left:4px;" data-label="input"><input type="checkbox"></td>
+                        <td data-label="Projects Name">APO 5</td>
+                        <td data-label="Contractor">Cappa & D’alberto Plc <span class="plus">+4</span></td>
+                        <td data-label="Budget">42,564,900.00</td>
+                        <td class="blue" data-label="Actual">42,564,000.00</td>
+                        <td data-label="SBU Head">Dele Sodiq</td>
+                        <td data-label="Agent">Michael Solja</td>
+                        <td class="blue" data-label="%Completion Status">Completed</td>
+                        <td class="blue" data-label="%Completion Status">100%</td>
+                        <td data-label="%Completion Status"><img style="cursor: pointer;" src="/asset/icons/Filter.svg"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:left; padding-left:4px;" data-label="input"><input type="checkbox"></td>
+                        <td data-label="Projects Name">BRADFORD CITY REV.</td>
+                        <td data-label="Contractor">SLEC Nigeria limited <span class="plus">+4</span></td>
+                        <td data-label="Budget">756,356,000.00</td>
+                        <td data-label="Actual">346,736,000.00</td>
+                        <td data-label="SBU Head">Kareem Majid</td>
+                        <td data-label="Agent">-</td>
+                        <td data-label="%Completion Status">Ongoing</td>
+                        <td data-label="%Completion Status">89%</td>
+                        <td data-label="%Completion Status"><img style="cursor: pointer;" src="/asset/icons/Filter.svg"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="paginationDiv">
+                <button style="border-radius: 4px; background-color:#56c5d0; padding:4px 12px; border:none; outline:none; color:#fff; 
+                font-size: 12px; cursor: pointer;" 
+                class="exportTable">Export</button>
+                <div class="paginationBtn">
+                    <button style=""><img src="/asset/icons/right2.svg" alt="right2"></button>
+                    <button style=""><img src="/asset/icons/right.svg" alt="right"></button>
+                    <button class="selectedTable" style="">1</button>
+                    <button style="">2</button>
+                    <button style="">3</button>
+                    <button style="">4</button>
+                    <button style="">5</button>
+                    <button style=""><img src="/asset/icons/left2.svg" alt="left2"></button>
+                    <button style=""><img src="/asset/icons/left.svg" alt="left"></button>
+                </div>
+            </div>
+        </div>
+
+     <!--table end here-->
+</body>
+</html>
